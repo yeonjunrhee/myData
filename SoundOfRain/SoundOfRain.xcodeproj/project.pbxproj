@@ -1,0 +1,749 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D2FE1FA3CB87ABEB4229A3F /* Pods_SoundOfRainTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF5A89730E6208CECD5A225D /* Pods_SoundOfRainTests.framework */; };
+		820F3DC8451EE3EEA592AA5F /* Pods_SoundOfRainUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3014D4CE4139D9DB327A5F7E /* Pods_SoundOfRainUITests.framework */; };
+		AFD8C81DB83ED925A09E2B92 /* Pods_SoundOfRain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2274DE7A51D221EFCBB2053 /* Pods_SoundOfRain.framework */; };
+		BF794DCF2112CC4300A9A1A5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF794DCE2112CC4300A9A1A5 /* GoogleService-Info.plist */; };
+		BF830F6921098E7A007268C8 /* rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF830F6821098E7A007268C8 /* rain.mp3 */; };
+		BF830F9021099AFD007268C8 /* backImage2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF830F8F21099AFD007268C8 /* backImage2.jpg */; };
+		BFC27E422106D1EB00CB377B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC27E412106D1EB00CB377B /* AppDelegate.swift */; };
+		BFC27E4A2106D1EB00CB377B /* SoundOfRain.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BFC27E482106D1EB00CB377B /* SoundOfRain.xcdatamodeld */; };
+		BFC27E4C2106D1EC00CB377B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFC27E4B2106D1EC00CB377B /* Assets.xcassets */; };
+		BFC27E4F2106D1EC00CB377B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFC27E4D2106D1EC00CB377B /* LaunchScreen.storyboard */; };
+		BFC27E5A2106D1EC00CB377B /* SoundOfRainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC27E592106D1EC00CB377B /* SoundOfRainTests.swift */; };
+		BFC27E652106D1EC00CB377B /* SoundOfRainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC27E642106D1EC00CB377B /* SoundOfRainUITests.swift */; };
+		BFC27E742106D2B400CB377B /* RainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC27E722106D2B400CB377B /* RainViewController.swift */; };
+		BFC27E752106D2B400CB377B /* RainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFC27E732106D2B400CB377B /* RainViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BFC27E562106D1EC00CB377B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFC27E362106D1EB00CB377B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFC27E3D2106D1EB00CB377B;
+			remoteInfo = SoundOfRain;
+		};
+		BFC27E612106D1EC00CB377B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFC27E362106D1EB00CB377B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFC27E3D2106D1EB00CB377B;
+			remoteInfo = SoundOfRain;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3014D4CE4139D9DB327A5F7E /* Pods_SoundOfRainUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoundOfRainUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34A072F1E24546483789D3C3 /* Pods-SoundOfRainUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundOfRainUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoundOfRainUITests/Pods-SoundOfRainUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5F07DD3E9B0ECBFF9B9E71D4 /* Pods-SoundOfRainUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundOfRainUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoundOfRainUITests/Pods-SoundOfRainUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		67164280EA610FEC262882CA /* Pods-SoundOfRainTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundOfRainTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoundOfRainTests/Pods-SoundOfRainTests.release.xcconfig"; sourceTree = "<group>"; };
+		8F1139C67D41CACE2A84EC10 /* Pods-SoundOfRain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundOfRain.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoundOfRain/Pods-SoundOfRain.debug.xcconfig"; sourceTree = "<group>"; };
+		BF794DCE2112CC4300A9A1A5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BF830F6821098E7A007268C8 /* rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rain.mp3; sourceTree = "<group>"; };
+		BF830F8F21099AFD007268C8 /* backImage2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backImage2.jpg; sourceTree = "<group>"; };
+		BFC27E3E2106D1EB00CB377B /* SoundOfRain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundOfRain.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFC27E412106D1EB00CB377B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BFC27E492106D1EB00CB377B /* SoundOfRain.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SoundOfRain.xcdatamodel; sourceTree = "<group>"; };
+		BFC27E4B2106D1EC00CB377B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFC27E4E2106D1EC00CB377B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BFC27E502106D1EC00CB377B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFC27E552106D1EC00CB377B /* SoundOfRainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundOfRainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFC27E592106D1EC00CB377B /* SoundOfRainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundOfRainTests.swift; sourceTree = "<group>"; };
+		BFC27E5B2106D1EC00CB377B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFC27E602106D1EC00CB377B /* SoundOfRainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundOfRainUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFC27E642106D1EC00CB377B /* SoundOfRainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundOfRainUITests.swift; sourceTree = "<group>"; };
+		BFC27E662106D1EC00CB377B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFC27E722106D2B400CB377B /* RainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainViewController.swift; sourceTree = "<group>"; };
+		BFC27E732106D2B400CB377B /* RainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RainViewController.xib; sourceTree = "<group>"; };
+		CF5A89730E6208CECD5A225D /* Pods_SoundOfRainTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoundOfRainTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2E59A44B3AE07D0292A65C6 /* Pods-SoundOfRainTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundOfRainTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoundOfRainTests/Pods-SoundOfRainTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EFB1CFEEC6B637609CD770C1 /* Pods-SoundOfRain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundOfRain.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoundOfRain/Pods-SoundOfRain.release.xcconfig"; sourceTree = "<group>"; };
+		F2274DE7A51D221EFCBB2053 /* Pods_SoundOfRain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoundOfRain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFC27E3B2106D1EB00CB377B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFD8C81DB83ED925A09E2B92 /* Pods_SoundOfRain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFC27E522106D1EC00CB377B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D2FE1FA3CB87ABEB4229A3F /* Pods_SoundOfRainTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFC27E5D2106D1EC00CB377B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				820F3DC8451EE3EEA592AA5F /* Pods_SoundOfRainUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A177064B58E8BCFED7A160F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2274DE7A51D221EFCBB2053 /* Pods_SoundOfRain.framework */,
+				CF5A89730E6208CECD5A225D /* Pods_SoundOfRainTests.framework */,
+				3014D4CE4139D9DB327A5F7E /* Pods_SoundOfRainUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF830F6121083559007268C8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF830F8F21099AFD007268C8 /* backImage2.jpg */,
+				BF830F6821098E7A007268C8 /* rain.mp3 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BFC27E352106D1EB00CB377B = {
+			isa = PBXGroup;
+			children = (
+				BFC27E402106D1EB00CB377B /* SoundOfRain */,
+				BFC27E582106D1EC00CB377B /* SoundOfRainTests */,
+				BFC27E632106D1EC00CB377B /* SoundOfRainUITests */,
+				BFC27E3F2106D1EB00CB377B /* Products */,
+				BFF64C3B0B0E3B933C99C518 /* Pods */,
+				A177064B58E8BCFED7A160F7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BFC27E3F2106D1EB00CB377B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFC27E3E2106D1EB00CB377B /* SoundOfRain.app */,
+				BFC27E552106D1EC00CB377B /* SoundOfRainTests.xctest */,
+				BFC27E602106D1EC00CB377B /* SoundOfRainUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFC27E402106D1EB00CB377B /* SoundOfRain */ = {
+			isa = PBXGroup;
+			children = (
+				BF794DCE2112CC4300A9A1A5 /* GoogleService-Info.plist */,
+				BF830F6121083559007268C8 /* Resources */,
+				BFC27E412106D1EB00CB377B /* AppDelegate.swift */,
+				BFC27E722106D2B400CB377B /* RainViewController.swift */,
+				BFC27E732106D2B400CB377B /* RainViewController.xib */,
+				BFC27E4B2106D1EC00CB377B /* Assets.xcassets */,
+				BFC27E4D2106D1EC00CB377B /* LaunchScreen.storyboard */,
+				BFC27E502106D1EC00CB377B /* Info.plist */,
+				BFC27E482106D1EB00CB377B /* SoundOfRain.xcdatamodeld */,
+			);
+			path = SoundOfRain;
+			sourceTree = "<group>";
+		};
+		BFC27E582106D1EC00CB377B /* SoundOfRainTests */ = {
+			isa = PBXGroup;
+			children = (
+				BFC27E592106D1EC00CB377B /* SoundOfRainTests.swift */,
+				BFC27E5B2106D1EC00CB377B /* Info.plist */,
+			);
+			path = SoundOfRainTests;
+			sourceTree = "<group>";
+		};
+		BFC27E632106D1EC00CB377B /* SoundOfRainUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BFC27E642106D1EC00CB377B /* SoundOfRainUITests.swift */,
+				BFC27E662106D1EC00CB377B /* Info.plist */,
+			);
+			path = SoundOfRainUITests;
+			sourceTree = "<group>";
+		};
+		BFF64C3B0B0E3B933C99C518 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F1139C67D41CACE2A84EC10 /* Pods-SoundOfRain.debug.xcconfig */,
+				EFB1CFEEC6B637609CD770C1 /* Pods-SoundOfRain.release.xcconfig */,
+				D2E59A44B3AE07D0292A65C6 /* Pods-SoundOfRainTests.debug.xcconfig */,
+				67164280EA610FEC262882CA /* Pods-SoundOfRainTests.release.xcconfig */,
+				5F07DD3E9B0ECBFF9B9E71D4 /* Pods-SoundOfRainUITests.debug.xcconfig */,
+				34A072F1E24546483789D3C3 /* Pods-SoundOfRainUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFC27E3D2106D1EB00CB377B /* SoundOfRain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFC27E692106D1EC00CB377B /* Build configuration list for PBXNativeTarget "SoundOfRain" */;
+			buildPhases = (
+				47EE6EFEBE60A112AE85BA19 /* [CP] Check Pods Manifest.lock */,
+				BFC27E3A2106D1EB00CB377B /* Sources */,
+				BFC27E3B2106D1EB00CB377B /* Frameworks */,
+				BFC27E3C2106D1EB00CB377B /* Resources */,
+				CDEDD827801D53DE55668E0F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoundOfRain;
+			productName = SoundOfRain;
+			productReference = BFC27E3E2106D1EB00CB377B /* SoundOfRain.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BFC27E542106D1EC00CB377B /* SoundOfRainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFC27E6C2106D1EC00CB377B /* Build configuration list for PBXNativeTarget "SoundOfRainTests" */;
+			buildPhases = (
+				2EC99348A3FEECAAA352D7E0 /* [CP] Check Pods Manifest.lock */,
+				BFC27E512106D1EC00CB377B /* Sources */,
+				BFC27E522106D1EC00CB377B /* Frameworks */,
+				BFC27E532106D1EC00CB377B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFC27E572106D1EC00CB377B /* PBXTargetDependency */,
+			);
+			name = SoundOfRainTests;
+			productName = SoundOfRainTests;
+			productReference = BFC27E552106D1EC00CB377B /* SoundOfRainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BFC27E5F2106D1EC00CB377B /* SoundOfRainUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFC27E6F2106D1EC00CB377B /* Build configuration list for PBXNativeTarget "SoundOfRainUITests" */;
+			buildPhases = (
+				2744E82EC7E957D35F8B64DF /* [CP] Check Pods Manifest.lock */,
+				BFC27E5C2106D1EC00CB377B /* Sources */,
+				BFC27E5D2106D1EC00CB377B /* Frameworks */,
+				BFC27E5E2106D1EC00CB377B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFC27E622106D1EC00CB377B /* PBXTargetDependency */,
+			);
+			name = SoundOfRainUITests;
+			productName = SoundOfRainUITests;
+			productReference = BFC27E602106D1EC00CB377B /* SoundOfRainUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFC27E362106D1EB00CB377B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Yeon;
+				TargetAttributes = {
+					BFC27E3D2106D1EB00CB377B = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					BFC27E542106D1EC00CB377B = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = BFC27E3D2106D1EB00CB377B;
+					};
+					BFC27E5F2106D1EC00CB377B = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = BFC27E3D2106D1EB00CB377B;
+					};
+				};
+			};
+			buildConfigurationList = BFC27E392106D1EB00CB377B /* Build configuration list for PBXProject "SoundOfRain" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BFC27E352106D1EB00CB377B;
+			productRefGroup = BFC27E3F2106D1EB00CB377B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFC27E3D2106D1EB00CB377B /* SoundOfRain */,
+				BFC27E542106D1EC00CB377B /* SoundOfRainTests */,
+				BFC27E5F2106D1EC00CB377B /* SoundOfRainUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFC27E3C2106D1EB00CB377B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF830F6921098E7A007268C8 /* rain.mp3 in Resources */,
+				BFC27E4F2106D1EC00CB377B /* LaunchScreen.storyboard in Resources */,
+				BF830F9021099AFD007268C8 /* backImage2.jpg in Resources */,
+				BFC27E752106D2B400CB377B /* RainViewController.xib in Resources */,
+				BFC27E4C2106D1EC00CB377B /* Assets.xcassets in Resources */,
+				BF794DCF2112CC4300A9A1A5 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFC27E532106D1EC00CB377B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFC27E5E2106D1EC00CB377B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2744E82EC7E957D35F8B64DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SoundOfRainUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2EC99348A3FEECAAA352D7E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SoundOfRainTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47EE6EFEBE60A112AE85BA19 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SoundOfRain-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDEDD827801D53DE55668E0F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SoundOfRain/Pods-SoundOfRain-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SoundOfRain/Pods-SoundOfRain-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFC27E3A2106D1EB00CB377B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFC27E742106D2B400CB377B /* RainViewController.swift in Sources */,
+				BFC27E422106D1EB00CB377B /* AppDelegate.swift in Sources */,
+				BFC27E4A2106D1EB00CB377B /* SoundOfRain.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFC27E512106D1EC00CB377B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFC27E5A2106D1EC00CB377B /* SoundOfRainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFC27E5C2106D1EC00CB377B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFC27E652106D1EC00CB377B /* SoundOfRainUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BFC27E572106D1EC00CB377B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFC27E3D2106D1EB00CB377B /* SoundOfRain */;
+			targetProxy = BFC27E562106D1EC00CB377B /* PBXContainerItemProxy */;
+		};
+		BFC27E622106D1EC00CB377B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFC27E3D2106D1EB00CB377B /* SoundOfRain */;
+			targetProxy = BFC27E612106D1EC00CB377B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BFC27E4D2106D1EC00CB377B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFC27E4E2106D1EC00CB377B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BFC27E672106D1EC00CB377B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BFC27E682106D1EC00CB377B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFC27E6A2106D1EC00CB377B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F1139C67D41CACE2A84EC10 /* Pods-SoundOfRain.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9PHC69X7P2;
+				INFOPLIST_FILE = SoundOfRain/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.harmajun.SoundOfRain;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BFC27E6B2106D1EC00CB377B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFB1CFEEC6B637609CD770C1 /* Pods-SoundOfRain.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9PHC69X7P2;
+				INFOPLIST_FILE = SoundOfRain/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.harmajun.SoundOfRain;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BFC27E6D2106D1EC00CB377B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2E59A44B3AE07D0292A65C6 /* Pods-SoundOfRainTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9PHC69X7P2;
+				INFOPLIST_FILE = SoundOfRainTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.harmajun.SoundOfRainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoundOfRain.app/SoundOfRain";
+			};
+			name = Debug;
+		};
+		BFC27E6E2106D1EC00CB377B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67164280EA610FEC262882CA /* Pods-SoundOfRainTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9PHC69X7P2;
+				INFOPLIST_FILE = SoundOfRainTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.harmajun.SoundOfRainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoundOfRain.app/SoundOfRain";
+			};
+			name = Release;
+		};
+		BFC27E702106D1EC00CB377B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F07DD3E9B0ECBFF9B9E71D4 /* Pods-SoundOfRainUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9PHC69X7P2;
+				INFOPLIST_FILE = SoundOfRainUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.harmajun.SoundOfRainUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SoundOfRain;
+			};
+			name = Debug;
+		};
+		BFC27E712106D1EC00CB377B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34A072F1E24546483789D3C3 /* Pods-SoundOfRainUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9PHC69X7P2;
+				INFOPLIST_FILE = SoundOfRainUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.harmajun.SoundOfRainUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SoundOfRain;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFC27E392106D1EB00CB377B /* Build configuration list for PBXProject "SoundOfRain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFC27E672106D1EC00CB377B /* Debug */,
+				BFC27E682106D1EC00CB377B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFC27E692106D1EC00CB377B /* Build configuration list for PBXNativeTarget "SoundOfRain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFC27E6A2106D1EC00CB377B /* Debug */,
+				BFC27E6B2106D1EC00CB377B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFC27E6C2106D1EC00CB377B /* Build configuration list for PBXNativeTarget "SoundOfRainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFC27E6D2106D1EC00CB377B /* Debug */,
+				BFC27E6E2106D1EC00CB377B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFC27E6F2106D1EC00CB377B /* Build configuration list for PBXNativeTarget "SoundOfRainUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFC27E702106D1EC00CB377B /* Debug */,
+				BFC27E712106D1EC00CB377B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BFC27E482106D1EB00CB377B /* SoundOfRain.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BFC27E492106D1EB00CB377B /* SoundOfRain.xcdatamodel */,
+			);
+			currentVersion = BFC27E492106D1EB00CB377B /* SoundOfRain.xcdatamodel */;
+			path = SoundOfRain.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BFC27E362106D1EB00CB377B /* Project object */;
+}

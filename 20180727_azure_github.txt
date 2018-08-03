@@ -1,0 +1,40 @@
+# 20180727_첫번째시간
+
+>>> github 관련 내용
+
+git init : git을 하고자 하는 폴더가 있다면 입력하는 명령어
+
+git log
+git shortlog
+git show
+-> git 로그 순서대로 자세한 내용을 확인할 수 있음.
+
+>>> git 올리는 순서
+1. git init
+2. git add <file name /> directory name>
+3. git commit -m "<commit message>"
+4. git remote add origin <remote repository URL>
+5. git push -u origin master
+
+>>> github 에서 다른 소스 코드를 참조하고자 할때 다음 검색어에 boilerplate 추가해서 검색하면
+다양한 참조 코드를 검색할 수 있다.
+- 예) swift/django boilerplate
+
+
+>>> branch: 새로운 기능 개발이나 테스트를 위해서 사용하는 독립적인 commit 모음
+
+git branch 만들기 2가지
+1. git branch < branch name >  -> git checkout < branch name >
+
+2. git checkout -b < branch name > -> branch 만들면서 권한 이동을 할 수 있는 옵션 -b
+
+ex) git checkout -b testBranch -> testBranch 생성하면서 권한이동
+    git checkout master -> testBranch에서 master로 변경
+
+
+>>> pull request: branch에서 완료된 작업을 리뷰(테스트) 후 master로 merge 요청을 하기 위해서 사용
+
+>>> issue: 개발하고 싶은 새로운 feature를 구체화
+
+>>> azure에서 배포할때 사용자 미지정시 터미널에서 사용할 수 있는 명령어
+az webapp deployment user set --user-name  <username> --password <password>

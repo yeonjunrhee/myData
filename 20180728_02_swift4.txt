@@ -1,0 +1,106 @@
+https://blog.naver.com/go4693/221182850846
+
+Swift4 Map
+
+맵은 자신을 호출할 때 매개변수로 전달된 함수를 실행하여 그 결과를 반환해주는 함수이다.
+스위프트의 Sequence Collection 프로토콜을 따르는 타입과 옵셔널은
+맵을 사용할 수 있다.
+
+맵은 컨테이너가 담고 있던 각각의 값을 매개변수를 통해 받은 함수에 적용한 후
+다시 컨테이너에 포장하여 반환한다.
+기존 컨테이너 값은 변경되지 않고 새로운 컨테이너가 반환되며
+기존 데이터를 변형하는데 많이 사용한다.
+
+map은 for-in 문과 사용법은 비슷하지만
+코드의 재사용, 컴파일러 최적화 측면에서 본다면 성능 차이가 있다.
+또는 다중 스레드 환경일 때 대상 컨테이너의 값이 스레드에서 변경되는 시점에 다른 스레드에서도 동시에 값이 변경되려고 할 때 예측하지 못한 결과를 방지할 수도 있다.
+
+먼저 map과 for-in 문의 비교
+
+let numbers: [Int] = [0, 1, 2, 3, 4]
+
+var doubledNumbers: [Int] = [Int]()
+var strings: [String] = [String]()
+
+// for-in
+for number in numbers {
+    doubledNumbers.append(number * 2)
+    strings.append("\(number)")
+}
+
+print(doubledNumbers) // [0, 2, 4, 6, 8]
+print(strings)       // ["0", "1", "2", "3", "4"]
+
+// map
+var doubledNumbers1 = numbers.map({ (number: Int) -> Int in
+    return number * 2
+})
+var strings1 = numbers.map({ (number: Int) -> String in
+    return "\(number)"
+})
+
+print(doubledNumbers1) // [0, 2, 4, 6, 8]
+print(strings1)       // ["0", "1", "2", "3", "4"]
+map을 사용하면 for-in 문에서 사용하기 위한 빈 배열을 생성하지 않아도 되고
+배열의 append 연산을 실행하지 않아도 된다.
+
+클로저 표현식을 이용해서 간결하게 만들기
+let numbers: [Int] = [0, 1, 2, 3, 4]
+// 기본 클로저
+var doubledNumbers = numbers.map({ (number: Int) -> Int in
+    return number * 2
+})
+// 매개변수 반환타입 생략
+doubledNumbers = numbers.map({ return $0 * 2 })
+print(doubledNumbers) // [0, 2, 4, 6, 8]
+
+// return 생략
+doubledNumbers = numbers.map({ $0 * 2 })
+print(doubledNumbers) // [0, 2, 4, 6, 8]
+
+// 트레일링 클로저
+doubledNumbers = numbers.map{ $0 * 2 }
+print(doubledNumbers) // [0, 2, 4, 6, 8]
+같은 기능을 여러 번 사용하려면 클로저를 변수에 할당하면 된다.
+let evenNumbers: [Int] = [0, 2, 4, 6, 8]
+let oddNumbers: [Int] = [0, 1, 3, 5, 7]
+let multiplyTwo: (Int) -> Int = { $0 * 2 }
+
+let doubledEvenNumbers = evenNumbers.map(multiplyTwo)
+print(doubledEvenNumbers) // [0, 4, 8, 12, 16]
+
+let doubledOddNumbers = oddNumbers.map(multiplyTwo)
+print(doubledOddNumbers)  // [0, 2, 6, 10, 14]
+
+여러 컨테이너 타입에서 사용한 map
+let alphabetDictionary: [String: String] = ["a":"A", "b":"B"]
+
+var keys: [String] = alphabetDictionary.map{ (tuple: (String, String)) -> String in
+    return tuple.0
+}
+keys = alphabetDictionary.map{ $0.0 }
+
+let values: [String] = alphabetDictionary.map{ $0.1 }
+print(keys)  // ["b", "a"]
+print(values)// ["B", "A"]
+
+var numberSet: Set<Int> = [1, 2, 3, 4, 5]
+let resultSet = numberSet.map{ $0 * 2 }
+print(resultSet) // [10, 4, 6, 2, 8]
+
+let optionalInt: Int? = 3
+let resultInt: Int? = optionalInt.map{ $0 * 2 }
+print(resultInt) // Optional(6)
+
+let range: CountableClosedRange = (0...3)
+let resultRange: [Int] = range.map{ $0 * 2 }
+print(resultRange) // [0, 2, 4, 6]
+
+
+
+
+>>> swift4 배경에 이미지 넣기 방법 1
+
+
+self.view.backgroundColor = UIColor(patternImage: UIImage(named: "backimg.jpg")!)
+

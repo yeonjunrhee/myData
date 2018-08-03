@@ -1,0 +1,6 @@
+framework module Pods_SoundOfRain {
+  umbrella header "Pods-SoundOfRain-umbrella.h"
+
+  export *
+  module * { export * }
+}
